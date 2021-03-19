@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Exchange Rates</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="howLOngUpDate">     Текущие курсы доллара к кыргызскому сому в коммерческих банках Бишкека и обменных бюро Моссовета на</string>
+
+</resources>

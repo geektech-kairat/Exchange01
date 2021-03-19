@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".FirstFragment.FirstFragment">
+
+    <TextView
+        android:id="@+id/titleForRv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/howLOngUpDate"
+        android:textAlignment="center"
+        android:textColor="#332828"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/downTitle"
+        android:layout_width="match_parent"
+        android:layout_height="30sp"
+        android:layout_marginStart="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleForRv">
+
+        <TextView
+            android:id="@+id/bank"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="Банк"
+            android:textColor="#610C0C" />
+
+        <TextView
+            android:id="@+id/bye"
+            android:layout_width="81dp"
+            android:layout_height="wrap_content"
+            android:text="покупка"
+            android:textColor="#610C0C" />
+
+        <TextView
+            android:id="@+id/sale"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+
+            android:text="продажа"
+            android:textColor="#610C0C" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_marginHorizontal="10dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/downTitle"
+        tools:listitem="@layout/list_item" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
